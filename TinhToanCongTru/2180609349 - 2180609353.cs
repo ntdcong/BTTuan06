@@ -61,5 +61,30 @@
                 MessageBox.Show("Vui lòng nhập số hợp lệ.");
             }
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Lấy giá trị từ các TextBox
+                double so3 = Convert.ToDouble(textBox3.Text);
+                double so4 = Convert.ToDouble(textBox4.Text);
+
+                // Thực hiện các phép tính
+                double hieu = so3 + so4;
+
+                // Hiển thị kết quả
+                label4.Text = $"Hiệu: {hieu}";
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Vui lòng nhập số hợp lệ.");
+            }
+        }
     }
 }
