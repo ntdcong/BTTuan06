@@ -58,8 +58,13 @@
             }
             catch (FormatException)
             {
-                MessageBox.Show("Vui lòng nhập số hợp lệ.");
+                MessageBox.Show("Vui lòng nhập số đúng.");
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

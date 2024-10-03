@@ -86,6 +86,7 @@
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Phép cộng - Duy Công làm";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // button1
             // 
